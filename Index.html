@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Anandi Hotel Attendance</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="container">
+
+    <div class="header">
+      <h1>Anandi Hotel & Restaurant, Guhagar</h1>
+      <p>Staff Attendance Dashboard</p>
+    </div>
+
+    <div class="top-section">
+
+      <div class="date-box">
+        <label>Date</label>
+        <input type="date" id="attendanceDate">
+      </div>
+
+      <div class="search-box">
+        <label>Search Staff</label>
+        <input type="text" id="searchInput" placeholder="Search employee...">
+      </div>
+
+    </div>
+
+    <div class="stats">
+
+      <div class="card">
+        <h2 id="presentCount">0</h2>
+        <p>Present</p>
+      </div>
+
+      <div class="card">
+        <h2 id="absentCount">0</h2>
+        <p>Absent</p>
+      </div>
+
+      <div class="card">
+        <h2 id="leaveCount">0</h2>
+        <p>Leave</p>
+      </div>
+
+      <div class="card">
+        <h2 id="woCount">0</h2>
+        <p>Weekly Off</p>
+      </div>
+
+    </div>
+
+    <table>
+
+      <thead>
+        <tr>
+          <th>Employee Name</th>
+          <th>Department</th>
+          <th>Status</th>
+        </tr>
+      </thead>
+
+      <tbody id="tableBody"></tbody>
+
+    </table>
+
+    <button onclick="saveAttendance()">
+      Save Attendance
+    </button>
+
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>
